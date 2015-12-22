@@ -1,0 +1,30 @@
+
+.story{
+	@include outer-container(960px);
+	
+}
+
+.story__text{
+	color:$secondary-color;
+	@extend %serif;
+	@include span-columns(9);
+	@include shift(2);
+	margin-bottom:0em;
+}
+
+.story__text + .story__text{
+	margin-top:0em;
+	text-indent:1.5em;
+}
+
+.story__text-intro{
+	@extend %small-cap;
+	@extend %sans-serif;
+	font-weight:bold;
+}
+
+.story__image-break{
+	@include span-columns(12);
+	margin-top:$lead-one;
+	margin-bottom:$lead-two;
+}
