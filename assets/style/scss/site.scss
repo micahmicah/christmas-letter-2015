@@ -1,5 +1,7 @@
-@import "reset";
-@import "grid";
-@import "type";
-@import "module";
-@import "theme";
+@import "components/bourbon/_bourbon";
+@import "components/neat/_neat";
+@import "components/color";
+@import "components/type";
+
+@import "components/header";
+@import "components/story";

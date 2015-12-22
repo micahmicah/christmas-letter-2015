@@ -1,0 +1,19 @@
+.header{
+	@extend %small-text;
+	@extend %centered-text;
+	@extend %sans-serif;
+	color:white;
+	background:$secondary-color;
+	height:100%;
+	height:90vh;
+	@include outer-container(100%);
+	display:flex;
+}
+
+.header__title{
+	margin:0px;
+	flex:1 1 auto;
+	justify-content:center;
+	// @include span-columns(3);
+
+}
