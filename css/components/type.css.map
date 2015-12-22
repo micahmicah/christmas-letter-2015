@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAqCA,IAAI;EACH,SAAS,EAjCA,IAAI",
-"sources": ["../../scss/components/type.scss"],
-"names": [],
-"file": "type.css"
-}
