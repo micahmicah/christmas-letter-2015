@@ -1,23 +1,27 @@
 
 
 
-$small-text:11px;
-$medium-text: 24px;
+$small-text:12px;
+$medium-text: 19px;
 $big-text:36px;
+$x-large-text:42px;
+$xx-large-text:72px;
 
 $lead-one:1rem;
 $lead-two: $lead-one*2;
+$lead-three:$lead-one*3;
+$lead-four:$lead-one*4;
 
 %small-text{
 	font-size:$small-text;
 }
 
 %sans-serif{
-	font-family:Arial, Helvetica, Sans-serif;
+	font-family:Graphik, Arial, Helvetica, Sans-serif;
 }
 
 %serif{
-	font-family:"Times New Roman", Times, serif;
+	font-family:"Domaine Text", "Times New Roman", Times, serif;
 }
 
 %mono{
@@ -29,14 +33,27 @@ $lead-two: $lead-one*2;
 }
 
 %small-cap{
-	text-transform:uppercase;
-	font-size:0.66em;
-	letter-spacing:0.05em;
+	// text-transform:lowercase;
+	// font-variant:small-caps;
+	font-feature-settings: "c2sc", "smcp";
+	// text-transform:uppercase;
+	// font-size:0.66em;
+	// letter-spacing:0.05em;
 }
 
 
 html{
 	font-size:$medium-text;
-	line-height:$big-text;
+	line-height:$lead-two;
+
+	@media screen and (max-width:400px) {
+		font-size:18px;
+		line-height:1.4em;
+
+	}
+}
+
+p,h1,h2,h3,h4,h5,h6,li{
+	text-rendering:optimizeLegibility;
 }
 

@@ -1,0 +1,10 @@
+.story-slideshow{
+	@include span-columns(9);
+	@include shift(2);
+	margin-top:$lead-two;
+	margin-bottom:$lead-four;	
+}
+
+.story-slideshow__image{
+	max-width:100%;
+}
