@@ -9,7 +9,7 @@
 }
 
 .slideshow-thumbnail{
-	@include span-columns(3 of 9);
+	
 	@include omega(3n);
 	img{
 		max-width:100%;
@@ -18,6 +18,6 @@
 	}
 
 	@media screen and (min-width:768px) {
-		
+		@include span-columns(3 of 9);
 	}
 }

@@ -1,11 +1,16 @@
 
-
+@font-face {
+    font-family: Silly;
+    src: url(../../fonts/DomaineTextWeb-Regular.eot),
+    	 url(../../fonts/DomaineTextWeb-Regular.woff);
+}
 
 $small-text:12px;
 $medium-text: 19px;
 $big-text:36px;
-$x-large-text:42px;
+$x-large-text:48px;
 $xx-large-text:72px;
+
 
 $lead-one:1rem;
 $lead-two: $lead-one*2;
@@ -17,11 +22,11 @@ $lead-four:$lead-one*4;
 }
 
 %sans-serif{
-	font-family:Graphik, Arial, Helvetica, Sans-serif;
+	font-family:Arial, Helvetica, Sans-serif;
 }
 
 %serif{
-	font-family:"Domaine Text", "Times New Roman", Times, serif;
+	font-family:Silly, "Times New Roman", Times, serif;
 }
 
 %mono{
@@ -33,12 +38,8 @@ $lead-four:$lead-one*4;
 }
 
 %small-cap{
-	// text-transform:lowercase;
-	// font-variant:small-caps;
 	font-feature-settings: "c2sc", "smcp";
-	// text-transform:uppercase;
-	// font-size:0.66em;
-	// letter-spacing:0.05em;
+	
 }
 
 
