@@ -379,9 +379,13 @@ html {
   text-align: center; }
 
 .header__title, .story__text .small-cap, .story__text-intro, .meta-data-list__title {
-  -webkit-font-feature-settings: "c2sc", "smcp";
-     -moz-font-feature-settings: "c2sc", "smcp";
-          font-feature-settings: "c2sc", "smcp"; }
+  font-variant: small-caps; }
+  @supports ((-webkit-font-feature-settings: "smcp") or (-moz-font-feature-settings: "smcp") or (font-feature-settings: "smcp")) {
+    .header__title, .story__text .small-cap, .story__text-intro, .meta-data-list__title {
+      font-variant: normal;
+      -webkit-font-feature-settings: 'smcp';
+         -moz-font-feature-settings: 'smcp';
+              font-feature-settings: 'smcp'; } }
 
 html {
   font-size: 19px;

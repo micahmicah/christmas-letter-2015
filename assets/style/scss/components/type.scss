@@ -38,7 +38,16 @@ $lead-four:$lead-one*4;
 }
 
 %small-cap{
-	font-feature-settings: "c2sc", "smcp";
+	
+
+
+    font-variant: small-caps;
+
+@supports(font-feature-settings: 'smcp') {
+    
+        font-variant: normal;
+        font-feature-settings: 'smcp';
+	}
 	
 }
 

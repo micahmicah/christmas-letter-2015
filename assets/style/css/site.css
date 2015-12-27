@@ -379,7 +379,11 @@ html {
   text-align: center; }
 
 .header__title, .story__text .small-cap, .story__text-intro, .meta-data-list__title {
-  font-feature-settings: "c2sc", "smcp"; }
+  font-variant: small-caps; }
+  @supports (font-feature-settings: "smcp") {
+    .header__title, .story__text .small-cap, .story__text-intro, .meta-data-list__title {
+      font-variant: normal;
+      font-feature-settings: 'smcp'; } }
 
 html {
   font-size: 19px;
