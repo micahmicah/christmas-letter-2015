@@ -88,6 +88,14 @@
 	}
 }
 
+.story__note{
+	// @extend %mono;
+	@extend %small-cap;
+	@extend %serif;
+	text-align:center;
+	font-size:$medium-text;
+}
+
 .story__image-break{
 	@include span-columns(12);
 	margin-top:$lead-two;

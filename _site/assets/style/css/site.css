@@ -369,7 +369,7 @@ html {
 .header {
   font-family: Arial, Helvetica, Sans-serif; }
 
-.header__title, .section__title, .story__title, .story__text, .seasons-greetings__title {
+.header__title, .section__title, .story__title, .story__text, .story__note, .seasons-greetings__title {
   font-family: Silly, "Times New Roman", Times, serif; }
 
 .story__meta-data-container {
@@ -378,10 +378,10 @@ html {
 .header {
   text-align: center; }
 
-.header__title, .story__text .small-cap, .story__text-intro, .meta-data-list__title {
+.header__title, .story__text .small-cap, .story__text-intro, .story__note, .meta-data-list__title {
   font-variant-caps: small-caps; }
   @supports (font-feature-settings: "smcp") {
-    .header__title, .story__text .small-cap, .story__text-intro, .meta-data-list__title {
+    .header__title, .story__text .small-cap, .story__text-intro, .story__note, .meta-data-list__title {
       font-variant: normal;
       font-feature-settings: 'c2sc','smcp'; } }
 
@@ -540,6 +540,10 @@ body {
     margin-right: 0; }
   .story__image a {
     background: none; }
+
+.story__note {
+  text-align: center;
+  font-size: 19px; }
 
 .story__image-break {
   float: left;
