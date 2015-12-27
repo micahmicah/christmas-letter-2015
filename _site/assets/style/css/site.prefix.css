@@ -379,13 +379,13 @@ html {
   text-align: center; }
 
 .header__title, .story__text .small-cap, .story__text-intro, .meta-data-list__title {
-  font-variant: small-caps; }
+  font-variant-caps: small-caps; }
   @supports ((-webkit-font-feature-settings: "smcp") or (-moz-font-feature-settings: "smcp") or (font-feature-settings: "smcp")) {
     .header__title, .story__text .small-cap, .story__text-intro, .meta-data-list__title {
       font-variant: normal;
-      -webkit-font-feature-settings: 'smcp';
-         -moz-font-feature-settings: 'smcp';
-              font-feature-settings: 'smcp'; } }
+      -webkit-font-feature-settings: 'c2sc','smcp';
+         -moz-font-feature-settings: 'c2sc','smcp';
+              font-feature-settings: 'c2sc','smcp'; } }
 
 html {
   font-size: 19px;
@@ -393,7 +393,7 @@ html {
   @media screen and (max-width: 400px) {
     html {
       font-size: 18px;
-      line-height: 1.4em; } }
+      line-height: 1.6em; } }
 
 p, h1, h2, h3, h4, h5, h6, li {
   text-rendering: optimizeLegibility; }
@@ -464,8 +464,11 @@ body {
   letter-spacing: 2px;
   color: #059e3b;
   font-weight: normal;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   text-align: center; }
+  @media screen and (min-width: 768px) {
+    .section__title {
+      margin-bottom: 4rem; } }
   .section__title:before {
     content: "•";
     margin-right: 0.5em; }
@@ -477,11 +480,14 @@ body {
   max-width: 90%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 4rem; }
+  margin-bottom: 2rem; }
   .story::after {
     clear: both;
     content: "";
     display: table; }
+  @media screen and (min-width: 768px) {
+    .story {
+      margin-bottom: 4rem; } }
 
 .story__title {
   text-transform: uppercase;

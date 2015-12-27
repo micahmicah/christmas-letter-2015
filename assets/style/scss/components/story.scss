@@ -1,8 +1,11 @@
 
 .story{
 	@include outer-container(90%);
-	margin-bottom:$lead-four;
+	margin-bottom:$lead-two;
 	
+	@media screen and (min-width:768px) {
+			margin-bottom:$lead-four;
+	}
 
 	&:after{
 		

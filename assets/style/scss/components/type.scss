@@ -38,15 +38,15 @@ $lead-four:$lead-one*4;
 }
 
 %small-cap{
-	
 
 
-    font-variant: small-caps;
+
+    font-variant-caps: small-caps;
 
 @supports(font-feature-settings: 'smcp') {
     
         font-variant: normal;
-        font-feature-settings: 'smcp';
+        font-feature-settings: 'c2sc','smcp';
 	}
 	
 }
@@ -58,7 +58,7 @@ html{
 
 	@media screen and (max-width:400px) {
 		font-size:18px;
-		line-height:1.4em;
+		line-height:1.6em;
 
 	}
 }

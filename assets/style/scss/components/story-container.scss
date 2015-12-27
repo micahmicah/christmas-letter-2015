@@ -19,11 +19,14 @@
 	letter-spacing:2px;
 	color:$secondary-color;
 	font-weight:normal;
-	margin-bottom:$lead-four;
+	margin-bottom:$lead-two;
 	// font-style:italic;
 	text-align:center;
 	// border:1px solid $secondary-color;
 	
+	@media screen and (min-width:768px) {
+		margin-bottom:$lead-four;
+	}
 	&:before{
 		content:"•";
 		margin-right:0.5em;
