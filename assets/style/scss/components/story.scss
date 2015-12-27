@@ -78,13 +78,15 @@
 
 .story__image{
 	@include span-columns(12);
+	@include filter(grayscale(100%));
 
 	a{
 		background:none;
 	}
 
 	@media screen and (min-width:768px){
-		// @include span-columns(3);
+		@include span-columns(6);
+		@include shift(3);
 	}
 }
 

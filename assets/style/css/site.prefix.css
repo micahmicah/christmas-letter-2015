@@ -549,11 +549,22 @@ body {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 100%; }
+  width: 100%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
   .story__image:last-child {
     margin-right: 0; }
   .story__image a {
     background: none; }
+  @media screen and (min-width: 768px) {
+    .story__image {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      margin-left: 25.58941%; }
+      .story__image:last-child {
+        margin-right: 0; } }
 
 .story__note {
   text-align: center;
@@ -667,7 +678,7 @@ body {
 .seasons-greetings__title {
   font-weight: normal;
   color: #059e3b;
-  font-size: 48px;
+  font-size: 72px;
   line-height: 1em;
   text-align: center; }
   @media screen and (min-width: 768px) {
