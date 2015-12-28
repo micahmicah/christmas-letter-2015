@@ -524,7 +524,8 @@ body {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 74.41059%; }
+      width: 74.41059%;
+      padding-top: 3px; }
       .story__text:last-child {
         margin-right: 0; } }
   .story__text p {
@@ -630,6 +631,11 @@ body {
   color: #059e3b;
   margin-top: 0em;
   margin-bottom: 0em; }
+
+#stephen-photo {
+  margin-top: 8rem; }
+  #stephen-photo img {
+    margin-top: 2rem; }
 
 .story-slideshow {
   float: left;

@@ -39,6 +39,7 @@
 
 	@media screen and (min-width:768px){
 		@include span-columns(9);
+		padding-top:3px;
 		// @include shift(2);
 	}
 	p{
@@ -155,6 +156,13 @@
 	margin-bottom:0em;
 }
 
+
+#stephen-photo{
+	margin-top:$lead-four*2;
+	img{
+		margin-top:$lead-two;
+	}
+}
 
 
 
